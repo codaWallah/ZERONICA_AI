@@ -98,7 +98,7 @@ function takeCommand(message) {
     } else if (message.includes("play spotify")) {
         window.open("https://open.spotify.com/" , "_blank");
         speak("Opening Spotify....");   
-    } else if (message.includes("open NIU attendance")) {
+    } else if (message.includes("open COLLEGE")) {
         window.open("https://accsoft.niu.edu.in/accsoft_niu/studentlogin.aspx" , "_blank");
         speak("Opening NIU E.R.P.....");    
         
