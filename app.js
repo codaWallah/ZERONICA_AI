@@ -47,12 +47,15 @@ btn.addEventListener('click', () => {
 function takeCommand(message) {
     if (message.includes('hey') || message.includes('hello')) {
         speak("Hello Sir, How May I Help You?");
-    /*} else if (message.includes('Good Morning Jarvis') {
+        
+    } else if (message.includes('Good Morning Jarvis') {
         speak("Good Morning Boss...");
+    
     } else if (message.includes('Good Afternoon Jarvis') {
         speak("Good Afternoon Master...");
+    
     } else if (message.includes('Good Evening Jarvis') {
-        speak("Good Evening Sir...");*/    
+        speak("Good Evening Sir...");   
          
     } else if (message.includes("open google")) {
         window.open("https://google.com", "_blank");
@@ -63,11 +66,23 @@ function takeCommand(message) {
         window.open("https://youtube.com", "_blank");
         speak("Opening Youtube...");
     } else if (message.includes("open whatsapp")) {
-        window.open("https://whatsapp.com", "_blank");
+        window.open("https://api.whatsapp.com/", "_blank");
         speak("Opening Whatsapp...");
     } else if (message.includes("open facebook")) {
         window.open("https://facebook.com", "_blank");
         speak("Opening Facebook...");
+    } else if (message.includes("open instagram")) {
+        window.open("https://instagram.com", "_blank");
+        speak("Opening instagram...");
+    } else if (message.includes("open X")) {
+        window.open("https://twitter.com/", "_blank");
+        speak("Opening X...");
+    } else if (message.includes("open Github")) {
+        window.open("https://github.com/", "_blank");
+        speak("Opening Github...");    
+    } else if (message.includes("open Linkedin")) {
+        window.open("https://linkedin.com/", "_blank");
+        speak("Opening Linkedin...");    
     } else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what I found on the internet regarding " + message;
