@@ -10,7 +10,7 @@
     min-height: 100vh;
     position: relative;
     width: 100%;
-    background: #000;
+    /*background: #000;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,14 +34,14 @@
 }
 
 .main .image-container h1 {
-    color: #00bcd4;
+    color: #d3661e;
     text-align: center;
     margin-bottom: 10px;
     font-size: 40px;
 }
 
 .main .image-container p {
-    color: #324042;
+    color: #23af62;
     text-align: center;
     margin-bottom: 40px;
 }
