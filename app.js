@@ -95,6 +95,13 @@ function takeCommand(message) {
     } else if (message.includes("open amazon")) {
         window.open("https://amazon.in/" , "_blank");
         speak("Opening Amazon....");
+    } else if (message.includes("open spotify")) {
+        window.open("https://open.spotify.com/" , "_blank");
+        speak("Opening Spotify....");   
+    } else if (message.includes("open attendence")) {
+        window.open("https://accsoft.niu.edu.in/accsoft_niu/studentlogin.aspx" , "_blank");
+        speak("Opening NIU E.R.P.....");    
+        
     } else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what I found on the internet regarding " + message;
