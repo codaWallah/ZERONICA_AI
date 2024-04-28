@@ -56,7 +56,7 @@ function takeCommand(message) {
         speak("Hello Sir, How May I Help You?"); 
         
     } if (message.includes('good morning') || message.includes('good afternoon') || message.includes('good evening') ) {
-        speak("Same to you Guru G"); 
+        speak("Same to you Boss"); 
 
  
   
