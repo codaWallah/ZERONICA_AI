@@ -45,30 +45,18 @@ btn.addEventListener('click', () => {
 });
 
 {
-function takeCommand(message) {
-    if (message.includes('good morning') ) {
-        speak("good morning boss"); 
+/*function takeCommand(message) {
+    if (message.includes('good morning') || message.includes('good afternoon') || message.includes('good evening') ) {
+        speak("Same to you Guru G"); 
 }
+}*/
 }
-}
-{
-function takeCommand(message) {
-    if (message.includes('good morning') ) {
-        speak("good morning boss"); 
-}
-}
-}
- 
-    {
-    function takeCommand(message) {
-        if (message.includes('good evening') ) {
-            speak("good evening guru jii"); 
-}
-}
-}    
 function takeCommand(message) {
     if (message.includes('hey') || message.includes('hello')) {
-        speak("Hello Sir, How May I Help You?");
+        speak("Hello Sir, How May I Help You?"); 
+        
+    } if (message.includes('good morning') || message.includes('good afternoon') || message.includes('good evening') ) {
+        speak("Same to you Guru G"); 
 
  
   
@@ -98,6 +86,15 @@ function takeCommand(message) {
     } else if (message.includes("open linkedin")) {
         window.open("https://linkedin.com/", "_blank");
         speak("Opening Linkedin..."); 
+    } else if (message.includes("open chatgpt")) {
+        window.open("https://chat.openai.com/" , "_blank");
+        speak("Opening ChatGPT....");
+    } else if (message.includes("open flipkart")) {
+        window.open("https://flipkart.com/" , "_blank");
+        speak("Opening Flipkart....");
+    } else if (message.includes("open amazon")) {
+        window.open("https://amazon.in/" , "_blank");
+        speak("Opening Amazon....");
     } else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what I found on the internet regarding " + message;
