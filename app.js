@@ -95,7 +95,7 @@ function takeCommand(message) {
     } else if (message.includes("open amazon")) {
         window.open("https://amazon.in/" , "_blank");
         speak("Opening Amazon....");
-    } else if (message.includes("open spotify")) {
+    } else if (message.includes("play spotify")) {
         window.open("https://open.spotify.com/" , "_blank");
         speak("Opening Spotify....");   
     } else if (message.includes("open niu ERP")) {
