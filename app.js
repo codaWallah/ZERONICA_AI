@@ -15,16 +15,15 @@ function wishMe() {
     var day = new Date();
     var hour = day.getHours();
 
-    if (Good Morning) {
+    if (hour >= 0 && hour < 12) {
         speak("Good Morning Boss...");
-    } else if (Good Afternoon) {
+    } else if (hour >= 12 && hour < 17) {
         speak("Good Afternoon Master...");
-    } else if (Good Evening) {
+    } else {
         speak("Good Evening Sir...");
     }
-    /* if (hour >= 0 && hour < 12) { speak("Good Morning Boss..."); } else if (hour >= 12 && hour < 17) { speak("Good Afternoon Master..."); } else { speak("Good Evening Sir..."); }/*
-}*/
 }
+
 window.addEventListener('load', () => {
     speak("Initializing JARVIS...");
     wishMe();
@@ -45,23 +44,38 @@ btn.addEventListener('click', () => {
     recognition.start();
 });
 
+{
+function takeCommand(message) {
+    if (message.includes('good morning') ) {
+        speak("good morning boss"); 
+}
+}
+}
+{
+function takeCommand(message) {
+    if (message.includes('good morning') ) {
+        speak("good morning boss"); 
+}
+}
+}
+ 
+    {
+    function takeCommand(message) {
+        if (message.includes('good evening') ) {
+            speak("good evening guru jii"); 
+}
+}
+}    
 function takeCommand(message) {
     if (message.includes('hey') || message.includes('hello')) {
         speak("Hello Sir, How May I Help You?");
-        
-   /* } else if (message.includes('Good Morning Jarvis') {
-        speak("Good Morning Boss...");
+
+ 
+  
     
-    } else if (message.includes('Good Afternoon Jarvis') {
-        speak("Good Afternoon Master...");
-    
-    } else if (message.includes('Good Evening Jarvis') {
-        speak("Good Evening Sir...");   
-   */      
     } else if (message.includes("open google")) {
         window.open("https://google.com", "_blank");
         speak("Opening Google...");
-   
     }
     else if (message.includes("open youtube")) {
         window.open("https://youtube.com", "_blank");
@@ -75,15 +89,15 @@ function takeCommand(message) {
     } else if (message.includes("open instagram")) {
         window.open("https://instagram.com", "_blank");
         speak("Opening instagram...");
-    } else if (message.includes("open X")) {
+    } else if (message.includes("open x")) {
         window.open("https://twitter.com/", "_blank");
         speak("Opening X...");
-    } else if (message.includes("open Github")) {
+    } else if (message.includes("open github")) {
         window.open("https://github.com/", "_blank");
         speak("Opening Github...");    
-    } else if (message.includes("open Linkedin")) {
+    } else if (message.includes("open linkedin")) {
         window.open("https://linkedin.com/", "_blank");
-        speak("Opening Linkedin...");    
+        speak("Opening Linkedin..."); 
     } else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what I found on the internet regarding " + message;
