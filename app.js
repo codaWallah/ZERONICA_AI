@@ -9,7 +9,7 @@ function speak(text) {
     text_speak.pitch = 1;
 
     window.speechSynthesis.speak(text_speak);
-/*}
+}
 
 function wishMe() {
     var day = new Date();
@@ -21,7 +21,7 @@ function wishMe() {
         speak("Good Afternoon Master...");
     } else {
         speak("Good Evening Sir...");
-    }*/
+    }
 }
 
 window.addEventListener('load', () => {
