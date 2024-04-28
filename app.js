@@ -15,15 +15,16 @@ function wishMe() {
     var day = new Date();
     var hour = day.getHours();
 
-    if (hour >= 0 && hour < 12) {
+    if (Good Morning) {
         speak("Good Morning Boss...");
-    } else if (hour >= 12 && hour < 17) {
+    } else if (Good Afternoon) {
         speak("Good Afternoon Master...");
-    } else {
+    } else if (Good Evening) {
         speak("Good Evening Sir...");
     }
+    /* if (hour >= 0 && hour < 12) { speak("Good Morning Boss..."); } else if (hour >= 12 && hour < 17) { speak("Good Afternoon Master..."); } else { speak("Good Evening Sir..."); }/*
+}*/
 }
-
 window.addEventListener('load', () => {
     speak("Initializing JARVIS...");
     wishMe();
@@ -48,7 +49,7 @@ function takeCommand(message) {
     if (message.includes('hey') || message.includes('hello')) {
         speak("Hello Sir, How May I Help You?");
         
-    } else if (message.includes('Good Morning Jarvis') {
+   /* } else if (message.includes('Good Morning Jarvis') {
         speak("Good Morning Boss...");
     
     } else if (message.includes('Good Afternoon Jarvis') {
@@ -56,7 +57,7 @@ function takeCommand(message) {
     
     } else if (message.includes('Good Evening Jarvis') {
         speak("Good Evening Sir...");   
-         
+   */      
     } else if (message.includes("open google")) {
         window.open("https://google.com", "_blank");
         speak("Opening Google...");
