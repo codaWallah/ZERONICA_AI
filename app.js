@@ -86,7 +86,7 @@ function takeCommand(message) {
     } else if (message.includes("open linkedin")) {
         window.open("https://linkedin.com/", "_blank");
         speak("Opening Linkedin..."); 
-    } else if (message.includes("open chatgpt")) {
+    } else if (message.includes("open chat gpt")) {
         window.open("https://chat.openai.com/" , "_blank");
         speak("Opening ChatGPT....");
     } else if (message.includes("open flipkart")) {
