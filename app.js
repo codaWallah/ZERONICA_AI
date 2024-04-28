@@ -47,12 +47,12 @@ btn.addEventListener('click', () => {
 function takeCommand(message) {
     if (message.includes('hey') || message.includes('hello')) {
         speak("Hello Sir, How May I Help You?");
-    } else if (message.includes('Good Morning Jarvis') {
+    /*} else if (message.includes('Good Morning Jarvis') {
         speak("Good Morning Boss...");
     } else if (message.includes('Good Afternoon Jarvis') {
         speak("Good Afternoon Master...");
     } else if (message.includes('Good Evening Jarvis') {
-        speak("Good Evening Sir...");    
+        speak("Good Evening Sir...");*/    
          
     } else if (message.includes("open google")) {
         window.open("https://google.com", "_blank");
