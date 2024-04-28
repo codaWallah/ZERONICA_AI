@@ -9,7 +9,7 @@ function speak(text) {
     text_speak.pitch = 1;
 
     window.speechSynthesis.speak(text_speak);
-}
+/*}
 
 function wishMe() {
     var day = new Date();
@@ -21,7 +21,7 @@ function wishMe() {
         speak("Good Afternoon Master...");
     } else {
         speak("Good Evening Sir...");
-    }
+    }*/
 }
 
 window.addEventListener('load', () => {
@@ -51,18 +51,21 @@ function takeCommand(message) {
         window.open("https://google.com", "_blank");
         speak("Opening Google...");
     }
-       else  if (Good Morning Jarvis) {
+      if (message.includes('Good Morning Jarvis') {
         speak("Good Morning Boss...");
-    } else if (Good Afternoon Jarvis) {
+       }
+      if (message.includes('Good Afternoon Jarvis') {
         speak("Good Afternoon Master...");
-    } else if (Good Morning Jarvis) {
-        speak("Good Evening Sir...");
+       }
+      if (message.includes('Good Evening Jarvis') {
+        speak("Good Evening Sir...");    
+         
     }
     else if (message.includes("open youtube")) {
         window.open("https://youtube.com", "_blank");
         speak("Opening Youtube...");
     } else if (message.includes("open whatsapp")) {
-        window.open("https://www.whatsapp.com/", "_blank");
+        window.open("https://whatsapp.com", "_blank");
         speak("Opening Whatsapp...");
     } else if (message.includes("open facebook")) {
         window.open("https://facebook.com", "_blank");
