@@ -100,12 +100,12 @@ function takeCommand(message) {
         speak("Opening Spotify....");   
     } else if (message.includes("open college")) {
         window.open("https://accsoft.niu.edu.in/accsoft_niu/studentlogin.aspx" , "_blank");
-        speak("Opening NIU E.R.P.....");    
+        speak("Opening N.I.U E.R.P.....");    
         
     } 
 else if (message.includes("open pdf")) {
         window.open("https://www.ilovepdf.com/" , "_blank");
-        speak("Opening P.D.F SOFTWARE.....");}
+        speak("Opening P.D.F Software.....");}
 else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what I found on the internet regarding " + message;
