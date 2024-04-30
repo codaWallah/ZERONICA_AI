@@ -108,7 +108,7 @@ else if (message.includes("open pdf")) {
         speak("Opening P.D.F Software.....");}
 
 else if (message.includes("open storage")) {
-        window.open("https://drive.google.com/drive/folders/1s2e8pgt4F6K-tr7BV5jWPFqfwJlwptAL" , "_blank");
+        window.open("https://drive.google.com/drive/folders/" , "_blank");
         speak("Opening Study Material.....");}
 
 else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
