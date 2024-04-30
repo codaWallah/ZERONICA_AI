@@ -107,7 +107,7 @@ else if (message.includes("open pdf")) {
         window.open("https://www.ilovepdf.com/" , "_blank");
         speak("Opening P.D.F Software.....");}
 
-else if (message.includes("open study material")) {
+else if (message.includes("open books")) {
         window.open("https://drive.google.com/drive/folders/1s2e8pgt4F6K-tr7BV5jWPFqfwJlwptAL" , "_blank");
         speak("Opening Study Material.....");}
 
