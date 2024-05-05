@@ -107,8 +107,8 @@ else if (message.includes("open pdf")) {
         window.open("https://www.ilovepdf.com/" , "_blank");
         speak("Opening P.D.F Software.....");}
 
-else if (message.includes("open Storage")) {
-        window.open("https://drive.google.com/drive/folders/1s2e8pgt4F6K-tr7BV5jWPFqfwJlwptAL" , "_blank");
+else if (message.includes("open Study Storage")) {
+        window.open("https://drive.google.com/drive/folders/1s2e8pgt4F6K-tr7BV5jWPFqfwJlwptAL?usp=drive_link" , "_blank");
         speak("Opening Study Material.....");}
 
 else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
